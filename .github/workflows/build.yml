@@ -45,6 +45,7 @@ jobs:
       - name: Install apt deps
         if: runner.os == 'Linux'
         run: |
+          sudo apt update
           sudo apt install -y libfontconfig1-dev pkg-config
 
       - name: Checkout self
