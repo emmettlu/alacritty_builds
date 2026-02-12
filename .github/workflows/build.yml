@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Windows Config
-        if: matrix.os == 'windows-2022'
+        if: matrix.os == 'Windows'
         shell: pwsh
         run: |
           git config --system core.longpaths true
@@ -42,7 +42,7 @@ jobs:
           arch: x64
           sdk: 10.0.19041.0
 
-      - name: Install fontconfig
+      - name: Install apt deps
         if: runner.os == 'Linux'
         run: |
           sudo apt install -y libfontconfig1-dev pkg-config
