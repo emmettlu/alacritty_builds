@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Windows Config
-        if: matrix.os == 'Windows'
+        if: runner.os == 'Windows'
         shell: pwsh
         run: |
           git config --system core.longpaths true
