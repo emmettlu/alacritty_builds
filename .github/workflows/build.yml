@@ -8,7 +8,7 @@ jobs:
   build:
     env:
       PROJECT_REPOSITORY: alacritty/alacritty
-      PROJECT_VERSION: v0.15.1
+      PROJECT_VERSION: v0.16.1
       PROJECT_PATH: alacritty
       PROJECT_BIN: alacritty
     strategy:
